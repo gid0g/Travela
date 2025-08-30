@@ -7,12 +7,14 @@ import SearchPage from "./pages/SearchPage";
 import ResultRage from "./pages/ResultsPage";
 import BookingPage from "./pages/BookingPage";
 import ProfilePage from "./pages/ProfilePage";
+import ErrorPage from "./pages/ErrorPage";
 import { ToastContainer } from "react-toastify";
 import { useCookies } from "react-cookie";
 import { useEffect } from "react";
 import { useQueryClient } from "@tanstack/react-query";
 import { getUser } from "./queries/user.queries";
 import { useUserStore } from "./store/user.store";
+import ErrorBoundary from "./components/ErrorBoundary";
 import {
   Navigate,
   BrowserRouter as Router,
@@ -44,7 +46,7 @@ function App() {
   }
 
   return (
-    <>
+    <ErrorBoundary>
       <ToastContainer
         position="top-right"
         autoClose={5000}
@@ -67,10 +69,11 @@ function App() {
           <Route path="/results" element={<ResultRage />} />
           <Route path="/booking" element={<BookingPage />} />
           <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/error" element={<ErrorPage />} />
           <Route path="*" element={<NotFoundPage />} /> {/* Fallback route */}
         </Routes>
       </Router>
-    </>
+    </ErrorBoundary>
   );
 }
 

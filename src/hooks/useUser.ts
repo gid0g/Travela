@@ -16,26 +16,32 @@ export const useLoginUser = () => {
   return useMutation({
     mutationFn: loginUser,
     onSuccess: async (data) => {
-      navigate("/home");
-      setCookie("access_token", data.access_token, {
-        expires: new Date(Date.now() + 1000 * 60 * 60 * 24), 
-      });
+      try {
+        navigate("/home");
+        setCookie("access_token", data.access_token, {
+          expires: new Date(Date.now() + 1000 * 60 * 60 * 24),
+        });
 
-      const user = await queryClient.fetchQuery({
-        queryKey: ["user"],
-        queryFn: getUser,
-      });
-      toast.success("Login successful");
+        const user = await queryClient.fetchQuery({
+          queryKey: ["user"],
+          queryFn: getUser,
+        });
+        toast.success("Login successful");
 
-      setUser(user);
-      console.log("user", user);
+        setUser(user);
+        console.log("user", user);
+      } catch (error: any) {
+        console.error("Error fetching user after login:", error);
+        toast.error(
+          "Login successful but failed to load profile. Please refresh the page."
+        );
+      }
     },
     onError: async (error: any) => {
       const err = error as AxiosError<{ detail?: string }>;
-
-      toast.error(
-        "Login failed: " + (err.response?.data?.detail ?? "Unknown error")
-      );
+      const errorMessage =
+        err.response?.data?.detail || err.message || "Login failed";
+      toast.error(errorMessage);
     },
   });
 };
@@ -51,7 +57,7 @@ export const useSignUpUser = () => {
     onSuccess: async (_, variables) => {
       try {
         const loginResponse = await loginUser({
-          username: variables?.email, 
+          username: variables?.email,
           password: variables.password,
         });
 
@@ -74,13 +80,12 @@ export const useSignUpUser = () => {
         console.error("Auto-login error", err);
       }
     },
-    
+
     onError: async (error: any) => {
       const err = error as AxiosError<{ detail?: string }>;
-      toast.error(
-        "Registration failed: " +
-          (err.response?.data?.detail ?? "Unknown error")
-      );
+      const errorMessage =
+        err.response?.data?.detail || err.message || "Registration failed";
+      toast.error(errorMessage);
     },
   });
 };

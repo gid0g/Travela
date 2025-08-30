@@ -1,7 +1,7 @@
 import {
   getAttraction,
   getAttractionByTitle,
-  getAttractionByPartialText
+  getAttractionByPartialText,
 } from "../queries/attraction.queries";
 import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
 
@@ -19,6 +19,16 @@ export const useAllAttractions = () =>
       }
       return lastPage.page + 1;
     },
+    retry: (failureCount, error) => {
+      // Don't retry on 404 errors
+      if (
+        error instanceof Error &&
+        error.message.includes("No attractions found")
+      ) {
+        return false;
+      }
+      return failureCount < 3;
+    },
   });
 
 export const useGetAttraction = (title: string) => {
@@ -26,6 +36,13 @@ export const useGetAttraction = (title: string) => {
     queryKey: ["attraction", title],
     queryFn: () => getAttractionByTitle(title),
     enabled: !!title,
+    retry: (failureCount, error) => {
+      // Don't retry on 404 errors
+      if (error instanceof Error && error.message.includes("not found")) {
+        return false;
+      }
+      return failureCount < 3;
+    },
   });
 };
 export const useGetAttractionByPartialText = (title: string) => {
@@ -33,7 +50,15 @@ export const useGetAttractionByPartialText = (title: string) => {
     queryKey: ["attraction", title],
     queryFn: () => getAttractionByPartialText(title),
     enabled: !!title,
+    retry: (failureCount, error) => {
+      // Don't retry on 404 errors
+      if (
+        error instanceof Error &&
+        error.message.includes("No attractions found")
+      ) {
+        return false;
+      }
+      return failureCount < 3;
+    },
   });
 };
-
-

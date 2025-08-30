@@ -1,7 +1,5 @@
 import client from "../config/axios.config";
-import { toast } from "react-toastify";
 import type { UserResponse } from "../types/auth.types";
-
 
 const getUser = async (): Promise<UserResponse> => {
   try {
@@ -18,10 +16,21 @@ const getUser = async (): Promise<UserResponse> => {
     };
   } catch (error: any) {
     console.error("Error fetching user:", error);
-    toast.error(
-      "Error fetching user: " + (error.response?.data?.detail ?? "Unknown error")
-    );
-    throw error;
+
+    // Handle specific error cases
+    if (error.response?.status === 401) {
+      throw new Error("Authentication required. Please log in again");
+    } else if (error.response?.status === 403) {
+      throw new Error("Access denied. Please check your permissions");
+    } else if (error.response?.status === 404) {
+      throw new Error("User profile not found");
+    } else if (error.code === "NETWORK_ERROR") {
+      throw new Error("Network error. Please check your connection");
+    } else if (error.response?.data?.detail) {
+      throw new Error(error.response.data.detail);
+    } else {
+      throw new Error("Failed to fetch user profile. Please try again later");
+    }
   }
 };
 
