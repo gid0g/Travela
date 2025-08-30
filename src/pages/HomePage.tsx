@@ -25,11 +25,14 @@ function Home() {
   };
 
   const attractionWithKeys = useMemo(() => {
-    return allAttractions?.pages.flatMap((page) =>
-      page.items.map((item) => ({
-        ...item,
-        uid: item.id ?? nanoid(),
-      }))
+    if (!allAttractions?.pages) return [];
+
+    return allAttractions.pages.flatMap(
+      (page) =>
+        page?.items?.map((item) => ({
+          ...item,
+          uid: item?.id ?? nanoid(),
+        })) || []
     );
   }, [allAttractions]);
 
@@ -56,7 +59,8 @@ function Home() {
               {allAttractions && allAttractions.pages.length > 0 ? (
                 <InfiniteScroll
                   dataLength={
-                    allAttractions.pages.flatMap((page) => page.items).length
+                    allAttractions.pages?.flatMap((page) => page?.items || [])
+                      .length || 0
                   }
                   next={fetchNextPage}
                   hasMore={!!hasNextPage}

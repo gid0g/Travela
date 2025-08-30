@@ -18,16 +18,26 @@ function BookingCard({ booking }: BookingCardsProps) {
   const [disabled, setDisabled] = useState(false);
 
   useEffect(() => {
-    const now = new Date();
-    const bookings = new Date(booking?.date);
+    if (!booking?.date) {
+      setDisabled(false);
+      return;
+    }
+    
+    try {
+      const now = new Date();
+      const bookings = new Date(booking.date);
 
-    const diff = bookings.getTime() - now.getTime();
+      const diff = bookings.getTime() - now.getTime();
 
-    const oneDay = 24 * 60 * 60 * 1000;
+      const oneDay = 24 * 60 * 60 * 1000;
 
-    if (diff <= oneDay) {
-      setDisabled(true);
-    } else {
+      if (diff <= oneDay) {
+        setDisabled(true);
+      } else {
+        setDisabled(false);
+      }
+    } catch (error) {
+      console.error("Error calculating booking date:", error);
       setDisabled(false);
     }
   }, [booking?.date]);
@@ -54,15 +64,15 @@ function BookingCard({ booking }: BookingCardsProps) {
                   <h5 className="fw-bold mb-1">{booking?.place}</h5>
                   <small className="opacity-75">
                     <i className="fas fa-map-marker-alt me-3"></i>
-                    {booking?.location.length > 30
-                      ? `${booking?.location.substring(0, 30)}...`
-                      : booking?.location}
+                    {booking?.location && booking.location.length > 30
+                      ? `${booking.location.substring(0, 30)}...`
+                      : booking?.location || "Unknown Location"}
                   </small>
                 </div>
               </div>
               <div className="text-end">
                 <div className="fs-5 fw-bold">
-                  ₦ {Number(booking?.price).toLocaleString()}
+                  ₦ {Number(booking?.price || 0).toLocaleString()}
                 </div>
               </div>
             </div>

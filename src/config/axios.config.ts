@@ -27,7 +27,7 @@ client.interceptors.response.use(
     if (error.response?.status === 401) {
       cookies.remove("access_token", { path: "/" });
 
-      window.location.href = "/auth";
+      window.location.href = "/";
     }
     return Promise.reject(error);
   }

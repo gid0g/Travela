@@ -77,6 +77,7 @@ export const validateEmail = (email: string) => {
 };
 
 export const cleanTitle = (text: string): string => {
+  if (!text || typeof text !== 'string') return "Unknown Title";
   return text.replace(/^\d+\.\s*/, "");
 };
 
@@ -104,27 +105,33 @@ export function mapToLocationInfo(raw: ExtractedHotel): LocationInfo {
   };
 }
 export function mapToRecentSearches(hotels: ExtractedHotel[]): SearchResult[] {
+  if (!hotels || !Array.isArray(hotels)) return [];
+  
   const recent = hotels.slice(0, 5).map((hotel) => ({
-    id: hotel.id,
-    name: hotel.title.replace(/^\d+\.\s*/, ""),
-    location: hotel.secondaryInfo,
+    id: hotel?.id || "unknown",
+    name: hotel?.title?.replace(/^\d+\.\s*/, "") || "Unknown Title",
+    location: hotel?.secondaryInfo || "Unknown Location",
   }));
   return recent;
 }
 export function mapToSearch(hotels: HotelResponse): SearchResult[] {
+  if (!hotels || !Array.isArray(hotels)) return [];
+  
   const recent =
-    hotels?.flatMap((page) =>
-      page.items.map((hotel, index) => ({
-        id: `${page.page}-${index}`,
-        name: hotel.title,
-        location: hotel.secondaryInfo,
-      }))
+    hotels.flatMap((page) =>
+      page?.items?.map((hotel, index) => ({
+        id: `${page?.page || 0}-${index}`,
+        name: hotel?.title || "Unknown Title",
+        location: hotel?.secondaryInfo || "Unknown Location",
+      })) || []
     ) ?? [];
 
   return recent;
 }
 
 export function cleanImageUrl(url: string): string {
+  if (!url || typeof url !== 'string') return "";
+  
   const match = url.match(/^(.*?\.(jpg|jpeg|png|webp))/i);
   return match ? match[1] : url;
 }

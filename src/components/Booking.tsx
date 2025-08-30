@@ -182,7 +182,7 @@ export function BookButton() {
   const handleOnClick = () => {
     if (isNoUser) {
       alert("Kindly Login First");
-      navigate("/auth");
+      navigate("/");
     } else {
       navigate("/booking");
     }

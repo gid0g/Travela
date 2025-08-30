@@ -19,7 +19,8 @@ import {
 import BookingProfilePage from "../components/ConfirmBooking";
 import { useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-
+import ErrorBoundary from "../components/ErrorBoundary";
+import { handleComponentError } from "../utils/errorUtils";
 
 const BookingProcess = () => {
   const location = useLocation();
@@ -54,14 +55,22 @@ const BookingProcess = () => {
   const [currentStep, setCurrentStep] = useState(1);
   const [isConfirm, setIsConfirm] = useState(false);
   const handleBack = () => {
-    console.log("Back clicked");
-    setCurrentStep((prev) => Math.max(prev - 1, 1));
+    try {
+      console.log("Back clicked");
+      setCurrentStep((prev) => Math.max(prev - 1, 1));
+    } catch (error) {
+      handleComponentError(error, "BookingPage.handleBack");
+    }
   };
 
   const handleContinue = () => {
-    setCurrentStep((prev) => Math.min(prev + 1, 3));
-    if (currentStep === 3) {
-      setIsConfirm(true);
+    try {
+      setCurrentStep((prev) => Math.min(prev + 1, 3));
+      if (currentStep === 3) {
+        setIsConfirm(true);
+      }
+    } catch (error) {
+      handleComponentError(error, "BookingPage.handleContinue");
     }
   };
   const handleModifyBooking = (formData: any) => {
@@ -76,7 +85,7 @@ const BookingProcess = () => {
         onSuccess: () => navigate("/home", { replace: true }),
       });
     } else {
-      navigate("/home")
+      navigate("/home");
       setFormData({
         place: "",
         location: "",
@@ -95,7 +104,7 @@ const BookingProcess = () => {
         billingName: "",
         price: "",
       });
-      toast.success("Booking Cancelled")
+      toast.success("Booking Cancelled");
     }
   };
 
@@ -110,9 +119,9 @@ const BookingProcess = () => {
   const updateGuest = (id: string, field: keyof Guest, value: string) => {
     setFormData((prev) => ({
       ...prev,
-      guest: prev.guest.map((g) =>
-        g.id === id ? { ...g, [field]: value } : g
-      ),
+      guest:
+        prev.guest?.map((g) => (g?.id === id ? { ...g, [field]: value } : g)) ||
+        [],
     }));
   };
   const addGuest = () => {
@@ -128,59 +137,61 @@ const BookingProcess = () => {
   const removeGuest = (guestId: string) => {
     setFormData((prev) => ({
       ...prev,
-      guest: prev.guest.filter((guest) => guest.id !== guestId),
+      guest: prev.guest?.filter((guest) => guest?.id !== guestId) || [],
     }));
   };
   return (
-    <div>
-      {!isConfirm && (
-        <>
-          {currentStep === 1 && (
-            <Step1Booking
-              onBack={handleBack}
-              onContinue={handleContinue}
-              formData={formData}
-              updateFormData={updateFormData}
-              updateGuest={updateGuest}
-              addGuest={addGuest}
-              removeGuest={removeGuest}
-            />
-          )}
-          {currentStep === 2 && (
-            <Step2DateTimeGuests
-              onBack={handleBack}
-              onContinue={handleContinue}
-              formData={formData}
-              updateFormData={updateFormData}
-              updateGuest={updateGuest}
-              addGuest={addGuest}
-              removeGuest={removeGuest}
-            />
-          )}
-          {currentStep === 3 && (
-            <Step3ReviewPayment
-              onBack={handleBack}
-              onContinue={handleContinue}
-              formData={formData}
-              updateFormData={updateFormData}
-              updateGuest={updateGuest}
-              addGuest={addGuest}
-              removeGuest={removeGuest}
-            />
-          )}
-        </>
-      )}
-      {isConfirm && (
-        <BookingProfilePage
-          bookingData={formData}
-          handleModify={handleModifyBooking}
-          handleCancel={handleCancelBooking}
-          handleConfirm={handleConfirmBooking}
-          isLoading={isPending}
-          isModify={isModify}
-        />
-      )}
-    </div>
+    <ErrorBoundary>
+      <div>
+        {!isConfirm && (
+          <>
+            {currentStep === 1 && (
+              <Step1Booking
+                onBack={handleBack}
+                onContinue={handleContinue}
+                formData={formData}
+                updateFormData={updateFormData}
+                updateGuest={updateGuest}
+                addGuest={addGuest}
+                removeGuest={removeGuest}
+              />
+            )}
+            {currentStep === 2 && (
+              <Step2DateTimeGuests
+                onBack={handleBack}
+                onContinue={handleContinue}
+                formData={formData}
+                updateFormData={updateFormData}
+                updateGuest={updateGuest}
+                addGuest={addGuest}
+                removeGuest={removeGuest}
+              />
+            )}
+            {currentStep === 3 && (
+              <Step3ReviewPayment
+                onBack={handleBack}
+                onContinue={handleContinue}
+                formData={formData}
+                updateFormData={updateFormData}
+                updateGuest={updateGuest}
+                addGuest={addGuest}
+                removeGuest={removeGuest}
+              />
+            )}
+          </>
+        )}
+        {isConfirm && (
+          <BookingProfilePage
+            bookingData={formData}
+            handleModify={handleModifyBooking}
+            handleCancel={handleCancelBooking}
+            handleConfirm={handleConfirmBooking}
+            isLoading={isPending}
+            isModify={isModify}
+          />
+        )}
+      </div>
+    </ErrorBoundary>
   );
 };
 

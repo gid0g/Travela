@@ -25,7 +25,7 @@ import {
   formatDateForCard,
   validateEmail,
   generateTimeSlots,
-  formatPhone
+  formatPhone,
 } from "../utils/helper";
 import { ActionButtons } from "./Booking";
 import { useAttractionStore } from "../store/attraction.store";
@@ -133,7 +133,9 @@ function Step1Booking({
                     <InputField
                       placeholder="Enter Phone Number"
                       value={formatPhone(formData.phone)}
-                      onChange={(value) => updateFormData("phone", formatPhone(value))}
+                      onChange={(value) =>
+                        updateFormData("phone", formatPhone(value))
+                      }
                       type="tel"
                     />
                   </div>
@@ -173,15 +175,14 @@ function Step2DateTimeGuests({
   addGuest,
   removeGuest,
 }: BookingProcessProps) {
-  const [timeSlots, ] = useState<TimeSlot[]>(() =>
+  const [timeSlots] = useState<TimeSlot[]>(() =>
     generateTimeSlots(formData?.timeSlot)
   );
-
 
   const canContinue = Boolean(
     formData?.date &&
       formData?.timeSlot &&
-      formData?.guest.every((guests) => guests.name && guests.age)
+      formData?.guest?.every((guests) => guests?.name && guests?.age)
   );
   useEffect(() => {
     if (formData?.timeSlot) {
@@ -261,7 +262,7 @@ function Step2DateTimeGuests({
                     subtitle="Provide information for all guests visiting the reserve"
                   />
 
-                  {formData?.guest.map((guest, index) => (
+                  {formData?.guest?.map((guest, index) => (
                     <GuestForm
                       key={guest.id}
                       guest={guest}
@@ -270,14 +271,16 @@ function Step2DateTimeGuests({
                         updateGuest(guest.id, field, value)
                       }
                       onRemove={() => removeGuest(guest.id)}
-                      canRemove={formData?.guest.length >= 1}
+                      canRemove={(formData?.guest?.length || 0) >= 1}
                     />
                   ))}
 
                   <button
                     className="btn btn-outline-primary mb-4 w-100"
                     onClick={addGuest}
-                    disabled={Number(formData?.guests)>=formData?.guest.length}
+                    disabled={
+                      Number(formData?.guests) >= formData?.guest.length
+                    }
                     style={{ borderRadius: "25px", height: "50px" }}
                   >
                     <i className="bi bi-plus-circle me-2" />

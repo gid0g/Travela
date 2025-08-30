@@ -30,21 +30,27 @@ function SearchPage() {
   const { data: attraction, isFetching } =
     useGetAttractionByPartialText(deferredQuery);
   const { data: SelectedAttraction, isSuccess } = useGetAttraction(searchTerm);
-  const liveResults: SearchResult[] = attraction
-    ? mapToSearch([
-        {
-          ...attraction,
-          items: attraction.items.map((hotel) => ({
-            title: hotel.title,
-            secondaryInfo: hotel.secondaryInfo,
-            bubbleRating_count: hotel?.bubbleRating_count || 0,
-            bubbleRating_rating: hotel?.bubbleRating_rating || 0,
-            cardPhotos: hotel.cardPhotos,
-            travelTimes: hotel.travelTimes,
-          })),
-        },
-      ])
-    : [];
+  const liveResults: SearchResult[] =
+    attraction && attraction.items
+      ? mapToSearch([
+          {
+            ...attraction,
+            items: attraction.items.map((hotel) => ({
+              title: hotel?.title || "Unknown Title",
+              secondaryInfo: hotel?.secondaryInfo || "Unknown Location",
+              bubbleRating_count: hotel?.bubbleRating_count || 0,
+              bubbleRating_rating: hotel?.bubbleRating_rating || 0,
+              cardPhotos: hotel?.cardPhotos || [],
+              travelTimes: hotel?.travelTimes || {
+                duration: "",
+                walkTime: "",
+                driveTime: "",
+                alternateTime: "",
+              },
+            })),
+          },
+        ])
+      : [];
   useEffect(() => {
     if (isSuccess && SelectedAttraction) {
       setAttraction(SelectedAttraction as ExtractedHotel);

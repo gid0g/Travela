@@ -14,8 +14,8 @@ function ProfilePage() {
 
   const handleLogout = () => {
     removeUser();
-    navigate("/auth");
     removeCookie("access_token", { path: "/" });
+    navigate("/");
   };
 
   return (

@@ -17,7 +17,7 @@ export function Header() {
   const handleOnClick = () => {
     if (isNoUser) {
       alert("Kindly Login First");
-      navigate("/auth");
+      navigate("/");
     } else {
       navigate("/profile");
     }
@@ -77,7 +77,10 @@ export function AttractionCard({ attraction }: AttractionCardProps) {
     };
   }, []);
 
-  const imageUrl = inView ? cleanImageUrl(attraction?.cardPhotos[0]) : "";
+  const imageUrl =
+    inView && attraction?.cardPhotos?.length > 0
+      ? cleanImageUrl(attraction.cardPhotos[0])
+      : "";
 
   useEffect(() => {
     if (imageUrl) {
@@ -90,7 +93,7 @@ export function AttractionCard({ attraction }: AttractionCardProps) {
   const handleBooking = () => {
     if (isNoUser) {
       alert("Kindly Login First");
-      navigate("/auth");
+      navigate("/");
     } else {
       navigate("/booking");
       setAttraction(attraction);
