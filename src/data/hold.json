@@ -1,0 +1,2175 @@
+{
+  "status": true,
+  "message": "Success",
+  "timestamp": 1756499658227,
+  "data": {
+    "data": [
+      {
+        "id": "19601940",
+        "title": "1. Kimpton Shinjuku Tokyo By IHG",
+        "primaryInfo": null,
+        "secondaryInfo": "Shinjuku",
+        "badge": {
+          "size": "SMALL",
+          "type": "BEST_OF_BEST",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(448)",
+          "rating": 4.6
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": "View all 8 deals from $558",
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2394,
+              "maxWidth": 3624,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/68/cb/cb/hotel-exterior.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2994,
+              "maxWidth": 4500,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/d0/15/4e/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 4465,
+              "maxWidth": 6698,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/68/cc/fb/the-jones-cafe-bar.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 4411,
+              "maxWidth": 6616,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/68/cc/96/district-brasserie-bar.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": {
+            "text": "View all 8 deals from $558"
+          },
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "20376911",
+        "title": "2. MONday Apart Premium NIHONBASHI",
+        "primaryInfo": null,
+        "secondaryInfo": "Ginza / Tokyo Nihonbashi",
+        "badge": {
+          "size": "SMALL",
+          "type": "TRAVELLER_CHOICE",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(765)",
+          "rating": 4.9
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1548,
+              "maxWidth": 2752,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/9a/0a/b7/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1548,
+              "maxWidth": 2752,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/9e/7d/8b/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/e3/55/43/hotel-monday-apart.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/e3/55/46/hotel-monday-apart.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "25049751",
+        "title": "3. Koko Hotel Residence Asakusa Kappabashi",
+        "primaryInfo": null,
+        "secondaryInfo": "Taito, Tokyo Prefecture, Japan",
+        "badge": {},
+        "bubbleRating": {
+          "count": "(281)",
+          "rating": 4.9
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Agoda.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2057,
+              "maxWidth": 2880,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/7d/17/aa/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3456,
+              "maxWidth": 5184,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/7c/e0/57/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3456,
+              "maxWidth": 5184,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/7c/e8/4d/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3456,
+              "maxWidth": 5184,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/7c/e9/a7/caption.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Agoda.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "20329614",
+        "title": "4. MONday Apart Ueno Shin Okachimachi",
+        "primaryInfo": null,
+        "secondaryInfo": "Ueno, Asakusa",
+        "badge": {
+          "size": "SMALL",
+          "type": "BEST_OF_BEST",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(374)",
+          "rating": 4.9
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Agoda.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 4284,
+              "maxWidth": 5712,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/dc/f8/94/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/ca/98/6a/monday-apart.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/b4/19/1d/hotel-monday-apart.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/b4/19/3d/hotel-monday-apart.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Agoda.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "27921486",
+        "title": "5. MONday Apart Premium ASAKUSA",
+        "primaryInfo": null,
+        "secondaryInfo": "Taito, Tokyo Prefecture, Japan",
+        "badge": {},
+        "bubbleRating": {
+          "count": "(120)",
+          "rating": 4.9
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1548,
+              "maxWidth": 2752,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/ab/fc/a6/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1548,
+              "maxWidth": 2752,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/da/e8/3e/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1548,
+              "maxWidth": 2752,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/da/e8/39/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1548,
+              "maxWidth": 2752,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/da/e8/3a/caption.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "20311660",
+        "title": "6. MONday Apart Hamamatsuchodaimon",
+        "primaryInfo": null,
+        "secondaryInfo": "Odaiba / Shiodome / Shinbashi",
+        "badge": {
+          "size": "SMALL",
+          "type": "TRAVELLER_CHOICE",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(163)",
+          "rating": 4.9
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/b4/17/d7/hotel-monday-apart.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/b4/18/1d/hotel-monday-apart.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/b4/18/2b/hotel-monday-apart.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/b4/18/32/hotel-monday-apart.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "21506945",
+        "title": "7. MONday Apart Premium",
+        "primaryInfo": null,
+        "secondaryInfo": "Ueno, Asakusa",
+        "badge": {
+          "size": "SMALL",
+          "type": "TRAVELLER_CHOICE",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(224)",
+          "rating": 4.9
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/b5/24/06/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/ca/9f/df/monday-apart-premium.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/ca/9f/e4/monday-apart-premium.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/ca/9f/f3/monday-apart-premium.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "310308",
+        "title": "8. The Tokyo Station Hotel",
+        "primaryInfo": null,
+        "secondaryInfo": "Ginza / Tokyo Nihonbashi",
+        "badge": {
+          "size": "SMALL",
+          "type": "BEST_OF_BEST",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(2,021)",
+          "rating": 4.7
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 4024,
+              "maxWidth": 6048,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/66/07/a8/exterior.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1333,
+              "maxWidth": 2000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/02/ed/ba/30/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3000,
+              "maxWidth": 4500,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/ff/09/ad/the-lobby-lounge.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1181,
+              "maxWidth": 1772,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/8c/5d/4b/blanc-rouge.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "21506953",
+        "title": "9. MONday Apart Premium Akihabara",
+        "primaryInfo": null,
+        "secondaryInfo": "Ochanomizu / Akihabara / Kanda",
+        "badge": {
+          "size": "SMALL",
+          "type": "TRAVELLER_CHOICE",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(283)",
+          "rating": 4.9
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/e3/b1/df/monday-apart-premium.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/e3/b1/f3/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/ca/9d/51/monday-apart-premium.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/ca/9d/46/monday-apart-premium.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "310298",
+        "title": "10. Ryokan Sawanoya",
+        "primaryInfo": null,
+        "secondaryInfo": "Ueno, Asakusa",
+        "badge": {},
+        "bubbleRating": {
+          "count": "(738)",
+          "rating": 4.8
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": null,
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2160,
+              "maxWidth": 3840,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/72/7d/18/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 975,
+              "maxWidth": 1734,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/a5/0d/ea/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2160,
+              "maxWidth": 3840,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/70/ae/18/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2160,
+              "maxWidth": 3840,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/70/ae/82/caption.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": null,
+          "loadingMessage": null,
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "20328262",
+        "title": "11. Monday Apart Nihonbashi Ningyocho",
+        "primaryInfo": null,
+        "secondaryInfo": "Ginza / Tokyo Nihonbashi",
+        "badge": {
+          "size": "SMALL",
+          "type": "TRAVELLER_CHOICE",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(213)",
+          "rating": 4.9
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/e5/ba/ac/hotel-monday-apart.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/ca/b9/aa/gate-stay.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/e5/ba/f3/hotel-monday-apart.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/ca/b9/9e/gate-stay.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "23420822",
+        "title": "12. MONday Apart Asakusabashi Akihabara",
+        "primaryInfo": null,
+        "secondaryInfo": "Ueno, Asakusa",
+        "badge": {
+          "size": "SMALL",
+          "type": "TRAVELLER_CHOICE",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(174)",
+          "rating": 4.9
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1350,
+              "maxWidth": 2000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/e3/f7/15/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 642,
+              "maxWidth": 1141,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/72/e0/03/monday-apart-akihabara.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/ca/9a/f8/monday-apart.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 641,
+              "maxWidth": 1138,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/72/db/e9/monday-apart-akihabara.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "20312080",
+        "title": "13. MONday Apart Premium HAMAMATSUCHO",
+        "primaryInfo": null,
+        "secondaryInfo": "Odaiba / Shiodome / Shinbashi",
+        "badge": {
+          "size": "SMALL",
+          "type": "TRAVELLER_CHOICE",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(151)",
+          "rating": 4.9
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/cc/81/0c/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/cc/81/73/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/cc/82/46/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3000,
+              "maxWidth": 4000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/2b/55/81/caption.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "13823089",
+        "title": "14. MIMARU Tokyo Nihombashi Suitengumae",
+        "primaryInfo": null,
+        "secondaryInfo": "Ginza / Tokyo Nihonbashi",
+        "badge": {},
+        "bubbleRating": {
+          "count": "(289)",
+          "rating": 4.8
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1435,
+              "maxWidth": 2000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/2e/27/51/mimaru.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1413,
+              "maxWidth": 2000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/2e/27/40/mimaru.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1755,
+              "maxWidth": 3120,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/6b/67/f0/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3000,
+              "maxWidth": 3999,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/68/38/65/mimaru.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "14206059",
+        "title": "15. MIMARU Tokyo Ueno Inaricho",
+        "primaryInfo": null,
+        "secondaryInfo": "Ueno, Asakusa",
+        "badge": {
+          "size": "SMALL",
+          "type": "TRAVELLER_CHOICE",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(326)",
+          "rating": 4.8
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3000,
+              "maxWidth": 4000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/6b/7a/e2/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2250,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/81/cf/7d/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1977,
+              "maxWidth": 2880,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/3b/a8/b7/mimaru-tokyo-ueno-inaricho.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1971,
+              "maxWidth": 2880,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/39/84/b6/mimaru-tokyo-ueno-inaricho.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "26801502",
+        "title": "16. Hyatt House Tokyo Shibuya",
+        "primaryInfo": null,
+        "secondaryInfo": "Shibuya, Tokyo Prefecture, Japan",
+        "badge": {
+          "size": "SMALL",
+          "type": "TRAVELLER_CHOICE",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(156)",
+          "rating": 4.8
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1080,
+              "maxWidth": 1619,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/d3/27/85/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2001,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/d9/f2/1b/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2001,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/d9/f2/19/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3000,
+              "maxWidth": 4498,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/13/ee/d3/caption.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "23525995",
+        "title": "17. MONday Apart Premium Ueno Okachimachi",
+        "primaryInfo": null,
+        "secondaryInfo": "Ueno, Asakusa",
+        "badge": {
+          "size": "SMALL",
+          "type": "TRAVELLER_CHOICE",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(237)",
+          "rating": 4.8
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1365,
+              "maxWidth": 2048,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/43/d5/02/monday-apart-premium.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 800,
+              "maxWidth": 1200,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/ca/a7/c4/monday-apart-premium.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 800,
+              "maxWidth": 1200,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/ca/a8/18/monday-apart-premium.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 800,
+              "maxWidth": 1200,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/ca/a7/cc/monday-apart-premium.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "25049739",
+        "title": "18. KOKO HOTEL Residence Asakusa Tawaramachi",
+        "primaryInfo": null,
+        "secondaryInfo": "Taito, Tokyo Prefecture, Japan",
+        "badge": {
+          "size": "SMALL",
+          "type": "TRAVELLER_CHOICE",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(378)",
+          "rating": 4.9
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3055,
+              "maxWidth": 4582,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/dd/3a/80/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3456,
+              "maxWidth": 5184,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/7b/44/6e/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3456,
+              "maxWidth": 5184,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/7b/45/98/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3456,
+              "maxWidth": 4608,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/7b/45/9d/caption.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "23603741",
+        "title": "19. Monday Apart Premium Ueno",
+        "primaryInfo": null,
+        "secondaryInfo": "Ueno, Asakusa",
+        "badge": {
+          "size": "SMALL",
+          "type": "BEST_OF_BEST",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(499)",
+          "rating": 4.8
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1667,
+              "maxWidth": 2500,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/be/91/52/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1667,
+              "maxWidth": 2500,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/be/8b/64/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1667,
+              "maxWidth": 2500,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/be/8c/14/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1667,
+              "maxWidth": 2500,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/be/86/06/caption.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "18194260",
+        "title": "20. Mimaru Tokyo Ginza East",
+        "primaryInfo": null,
+        "secondaryInfo": "Ginza / Tokyo Nihonbashi",
+        "badge": {
+          "size": "SMALL",
+          "type": "BEST_OF_BEST",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(188)",
+          "rating": 4.8
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 4024,
+              "maxWidth": 5366,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/2b/ea/be/mimaru-east.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1755,
+              "maxWidth": 3120,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/6b/68/d5/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1663,
+              "maxWidth": 2218,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/29/5a/47/mimaru-east.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3000,
+              "maxWidth": 4000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/68/54/0b/mimaru-east.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "15850522",
+        "title": "21. hotel Monday Tokyo Nishikasai",
+        "primaryInfo": null,
+        "secondaryInfo": "Edogawa, Tokyo Prefecture, Japan",
+        "badge": {
+          "size": "SMALL",
+          "type": "TRAVELLER_CHOICE",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(221)",
+          "rating": 4.8
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1922,
+              "maxWidth": 2880,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/ca/79/6b/hotel-monday.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1920,
+              "maxWidth": 2880,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/d7/46/3e/universal-room.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1920,
+              "maxWidth": 2880,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/d7/46/58/deluxe-twin-room.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1920,
+              "maxWidth": 2880,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/d7/47/01/standard-double-room.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "13535079",
+        "title": "22. MIMARU Tokyo Akasaka",
+        "primaryInfo": null,
+        "secondaryInfo": "Akasaka / Roppongi",
+        "badge": {
+          "size": "SMALL",
+          "type": "TRAVELLER_CHOICE",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(339)",
+          "rating": 4.8
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1200,
+              "maxWidth": 1804,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/7b/0e/76/mimaru.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2994,
+              "maxWidth": 3994,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/6a/b4/3e/mimaru.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3000,
+              "maxWidth": 4000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/6a/b4/2c/mimaru.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3000,
+              "maxWidth": 4000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/67/fc/0c/mimaru.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "13140365",
+        "title": "23. Mimaru Tokyo Ueno North",
+        "primaryInfo": null,
+        "secondaryInfo": "Ueno, Asakusa",
+        "badge": {
+          "size": "SMALL",
+          "type": "BEST_OF_BEST",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(368)",
+          "rating": 4.7
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1333,
+              "maxWidth": 2000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/99/41/99/mimaru-north.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 4680,
+              "maxWidth": 6241,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/f0/02/10/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1333,
+              "maxWidth": 2000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/99/42/cf/mimaru-north.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2996,
+              "maxWidth": 3996,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/66/0f/2c/mimaru-north.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "26362434",
+        "title": "24. Hotel Toranomon Hills",
+        "primaryInfo": null,
+        "secondaryInfo": "Toranomon, Tokyo Prefecture, Japan",
+        "badge": {
+          "size": "SMALL",
+          "type": "TRAVELLER_CHOICE",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(126)",
+          "rating": 4.8
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1328,
+              "maxWidth": 2000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/b5/08/66/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 4032,
+              "maxWidth": 3024,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/30/e2/e6/cd/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 4284,
+              "maxWidth": 5712,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/30/e2/e6/cc/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 5712,
+              "maxWidth": 4284,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/30/e2/e6/cb/caption.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "23284998",
+        "title": "25. MIMARU Tokyo Asakusa Station",
+        "primaryInfo": null,
+        "secondaryInfo": "Ueno, Asakusa",
+        "badge": {
+          "size": "SMALL",
+          "type": "TRAVELLER_CHOICE",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(99)",
+          "rating": 4.9
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3000,
+              "maxWidth": 4000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/e0/da/a8/mimaru-tokyo-asakusa.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3000,
+              "maxWidth": 4000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/e0/da/cd/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3000,
+              "maxWidth": 4000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/68/25/9e/mimaru-station.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3000,
+              "maxWidth": 4000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/68/25/d7/mimaru-station.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "23334939",
+        "title": "26. MONday Apart Premium Ginza Shintomicho",
+        "primaryInfo": null,
+        "secondaryInfo": "Ginza / Tokyo Nihonbashi",
+        "badge": {
+          "size": "SMALL",
+          "type": "TRAVELLER_CHOICE",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(420)",
+          "rating": 4.8
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/ca/b7/81/gate-stay-premium.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/72/c8/69/gate-stay-premium.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/72/c7/a5/gate-stay-premium.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/ca/b7/5a/gate-stay-premium.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "19515658",
+        "title": "27. hotel MONday Premium UenoOkachimachi",
+        "primaryInfo": null,
+        "secondaryInfo": "Ueno, Asakusa",
+        "badge": {
+          "size": "SMALL",
+          "type": "TRAVELLER_CHOICE",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(155)",
+          "rating": 4.7
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/b4/15/69/hotel-monday.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/b4/15/bc/hotel-monday.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1548,
+              "maxWidth": 2752,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/9e/57/44/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2000,
+              "maxWidth": 3000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/b4/15/b1/hotel-monday.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "571809",
+        "title": "28. Conrad Tokyo",
+        "primaryInfo": null,
+        "secondaryInfo": "Odaiba / Shiodome / Shinbashi",
+        "badge": {
+          "size": "SMALL",
+          "type": "BEST_OF_BEST",
+          "year": "2025"
+        },
+        "bubbleRating": {
+          "count": "(4,282)",
+          "rating": 4.7
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1014,
+              "maxWidth": 1499,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2f/d9/19/23/exterior.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 5504,
+              "maxWidth": 8256,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/a2/ae/08/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 5504,
+              "maxWidth": 8256,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/a2/b1/7f/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 5504,
+              "maxWidth": 8256,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/a2/b3/2a/caption.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "19946792",
+        "title": "29. Mimaru Tokyo Shinjuku West",
+        "primaryInfo": null,
+        "secondaryInfo": "Shinjuku",
+        "badge": {},
+        "bubbleRating": {
+          "count": "(134)",
+          "rating": 4.8
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3024,
+              "maxWidth": 4032,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/0d/a1/d5/mimaru-west.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3000,
+              "maxWidth": 4000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/6a/bd/80/mimaru-west.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3000,
+              "maxWidth": 4000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/68/54/c5/mimaru-west.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 3000,
+              "maxWidth": 4000,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/68/59/ac/mimaru-west.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      },
+      {
+        "id": "16803307",
+        "title": "30. MIMARU Tokyo Hatchobori",
+        "primaryInfo": null,
+        "secondaryInfo": "Ginza / Tokyo Nihonbashi",
+        "badge": {},
+        "bubbleRating": {
+          "count": "(281)",
+          "rating": 4.8
+        },
+        "isSponsored": false,
+        "accentedLabel": false,
+        "provider": "Booking.com",
+        "priceForDisplay": null,
+        "strikethroughPrice": null,
+        "priceDetails": null,
+        "priceSummary": null,
+        "cardPhotos": [
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 4087,
+              "maxWidth": 6131,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/3f/1d/34/mimaru.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 1755,
+              "maxWidth": 3120,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/6b/6d/82/caption.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2022,
+              "maxWidth": 3033,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/3f/1b/b7/mimaru.jpg?w={width}&h={height}&s=1"
+            }
+          },
+          {
+            "__typename": "AppPresentation_PhotoItem",
+            "sizes": {
+              "__typename": "AppPresentation_PhotoItemSizeDynamic",
+              "maxHeight": 2022,
+              "maxWidth": 3033,
+              "urlTemplate": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/3f/1b/e8/mimaru.jpg?w={width}&h={height}&s=1"
+            }
+          }
+        ],
+        "commerceInfo": {
+          "provider": "Booking.com",
+          "loadingMessage": {
+            "text": "Loading prices..."
+          },
+          "priceForDisplay": null,
+          "strikethroughPrice": null,
+          "pricingPeriod": null,
+          "details": null,
+          "commerceSummary": null,
+          "roomUrgencyMessage": null,
+          "labels": []
+        }
+      }
+    ]
+  }
+}
