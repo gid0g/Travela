@@ -44,13 +44,13 @@ function BookingCard({ booking }: BookingCardsProps) {
   return (
     <>
       <motion.div
-        className="col-12 col-md-6 my-2"
+        className="col-12 col-md-6 my-2 d-flex"
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
         transition={{ type: "spring", stiffness: 200, damping: 15 }}
         style={{ cursor: "pointer" }}
       >
-        <div className="card shadow-lg border-0 rounded-4 overflow-hidden">
+        <div className="card shadow-lg border-0 rounded-4 overflow-hidden h-100 w-100 d-flex flex-column">
           <div className="position-relative">
             <div
               className="bg-primary text-white p-4"
@@ -78,7 +78,7 @@ function BookingCard({ booking }: BookingCardsProps) {
             </div>
           </div>
 
-          <div className="card-body p-4">
+          <div className="card-body p-4 d-flex flex-column flex-grow-1">
             <div className="mb-3">
               <div className="d-flex align-items-center">
                 <div className="bg-primary bg-opacity-10 rounded-circle p-2 me-3">
@@ -119,30 +119,32 @@ function BookingCard({ booking }: BookingCardsProps) {
               </div>
             </div>
 
-            <div className="text-center mb-3">
-              <span className="badge bg-success bg-opacity-20 text-white px-3 py-2 rounded-pill">
-                <i className="fas fa-check-circle me-1"></i>
-                Confirmed
-              </span>
-            </div>
+            <div className="mt-auto">
+              <div className="text-center mb-3">
+                <span className="badge bg-success bg-opacity-20 text-white px-3 py-2 rounded-pill">
+                  <i className="fas fa-check-circle me-1"></i>
+                  Confirmed
+                </span>
+              </div>
 
-            <div className="d-grid gap-2">
-              <button
-                className="btn btn-info rounded-pill py-2 fw-semibold"
-                onClick={() => handleModify()}
-                disabled={disabled}
-              >
-                <Edit className="me-2" size={18} />
-                {disabled ? "Too Late to modify" : "Modify Booking"}
-              </button>
-              <button
-                className="btn btn-outline-danger rounded-pill py-2 fw-semibold"
-                disabled={disabled}
-                onClick={() => handleCancel()}
-              >
-                <X className="me-2" size={18} />
-                {disabled ? "Too Late" : "Cancel Booking"}
-              </button>
+              <div className="d-grid gap-2">
+                <button
+                  className="btn btn-info rounded-pill py-2 fw-semibold"
+                  onClick={() => handleModify()}
+                  disabled={disabled}
+                >
+                  <Edit className="me-2" size={18} />
+                  {disabled ? "Too Late to modify" : "Modify Booking"}
+                </button>
+                <button
+                  className="btn btn-outline-danger rounded-pill py-2 fw-semibold"
+                  disabled={disabled}
+                  onClick={() => handleCancel()}
+                >
+                  <X className="me-2" size={18} />
+                  {disabled ? "Too Late" : "Cancel Booking"}
+                </button>
+              </div>
             </div>
           </div>
         </div>
