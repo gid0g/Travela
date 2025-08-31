@@ -8,44 +8,54 @@ import logo from "../assets/md_logo.ico";
 import { useUserStore } from "../store/user.store";
 import { useAttractionStore } from "../store/attraction.store";
 import defaultImage from "../images/default.png";
+import { LoginPromptModal } from "./modal/LoginModal";
 
 export function Header() {
   const user = useUserStore((state) => state?.user);
   const isNoUser = user == null;
   const navigate = useNavigate();
-
+  const [showLoginModal, setShowLoginModal] = useState(false);
   const handleOnClick = () => {
     if (isNoUser) {
-      alert("Kindly Login First");
-      navigate("/");
+      setShowLoginModal(true);
     } else {
       navigate("/profile");
     }
   };
 
   return (
-    <header className="bg-white border-bottom py-3 px-3">
-      <div className="container-fluid">
-        <div className="d-flex align-items-center justify-content-between">
-          <button
-            className="btn btn-link p-0 text-dark"
-            onClick={() => navigate("/home")}
-          >
-            <img src={logo} alt="logo" className="img-fluid" />
-          </button>
+    <>
+      <LoginPromptModal
+        show={showLoginModal}
+        onClose={() => setShowLoginModal(false)}
+      />
+      <header className="bg-white border-bottom py-3 px-3">
+        <div className="container-fluid">
+          <div className="d-flex align-items-center justify-content-between">
+            <button
+              className="btn btn-link p-0 text-dark"
+              onClick={() => navigate("/home")}
+            >
+              <img src={logo} alt="logo" className="img-fluid" />
+            </button>
 
-          <div className="d-flex align-items-center text-muted">
-            <img
-              src={user?.fallback_image ?? defaultImage}
-              alt="profile image"
-              className="img-fluid"
-              style={{ height: "2rem", borderRadius: "50%", cursor: "pointer" }}
-              onClick={handleOnClick}
-            />
+            <div className="d-flex align-items-center text-muted">
+              <img
+                src={user?.fallback_image ?? defaultImage}
+                alt="profile image"
+                className="img-fluid"
+                style={{
+                  height: "2rem",
+                  borderRadius: "50%",
+                  cursor: "pointer",
+                }}
+                onClick={handleOnClick}
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </>
   );
 }
 

@@ -5,8 +5,11 @@ import { Edit, X } from "lucide-react";
 import { useNavigate } from "react-router";
 import { useCancelBooking } from "../hooks/useBooking";
 import { motion } from "framer-motion";
+import { DeleteConfirmationModal } from "./modal/DeleteModal";
+
 function BookingCard({ booking }: BookingCardsProps) {
   const { mutate: cancelBooking } = useCancelBooking();
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
   const navigate = useNavigate();
   const handleModify = () => {
     console.log("Clicked modify");
@@ -22,7 +25,7 @@ function BookingCard({ booking }: BookingCardsProps) {
       setDisabled(false);
       return;
     }
-    
+
     try {
       const now = new Date();
       const bookings = new Date(booking.date);
@@ -43,6 +46,11 @@ function BookingCard({ booking }: BookingCardsProps) {
   }, [booking?.date]);
   return (
     <>
+      <DeleteConfirmationModal
+        show={showDeleteModal}
+        onClose={() => setShowDeleteModal(false)}
+        onDelete={handleCancel}
+      />
       <motion.div
         className="col-12 col-md-6 my-2 d-flex"
         whileHover={{ scale: 1.02 }}
@@ -139,7 +147,9 @@ function BookingCard({ booking }: BookingCardsProps) {
                 <button
                   className="btn btn-outline-danger rounded-pill py-2 fw-semibold"
                   disabled={disabled}
-                  onClick={() => handleCancel()}
+                  onClick={() => {
+                    setShowDeleteModal(true);
+                  }}
                 >
                   <X className="me-2" size={18} />
                   {disabled ? "Too Late" : "Cancel Booking"}

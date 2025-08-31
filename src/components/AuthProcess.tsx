@@ -219,7 +219,7 @@ function AuthApp({ onNext, isLoading }: AuthAppProps) {
     setIsPending(true);
     setError("");
     const payload = {
-      username: data.username,
+      username: data.username.trim(),
       password: data.password,
     };
     console.log("payload", payload);

@@ -27,8 +27,11 @@ function SearchPage() {
     query as ExtractedHotel[]
   );
 
-  const { data: attraction, isFetching } =
-    useGetAttractionByPartialText(deferredQuery);
+  const {
+    data: attraction,
+    isFetching,
+    isSuccess: partialSuccess,
+  } = useGetAttractionByPartialText(deferredQuery);
   const { data: SelectedAttraction, isSuccess } = useGetAttraction(searchTerm);
   const liveResults: SearchResult[] =
     attraction && attraction.items
@@ -95,6 +98,9 @@ function SearchPage() {
                   results={resultsToShow}
                   onResultClick={handleResultClick}
                 />
+              )}
+              {partialSuccess && attraction?.items.length == 0 && (
+                <p className="text-center">No result found</p>
               )}
             </div>
           </div>
