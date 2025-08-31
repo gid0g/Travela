@@ -141,7 +141,7 @@ export function LocationCard({
     >
       <div className="card-body p-4">
         <div className="d-flex flex-column flex-md-row align-items-center">
-          {/* Image */}
+
           <div
             className="rounded mb-3 mb-md-0 me-md-3"
             style={{
@@ -154,7 +154,7 @@ export function LocationCard({
             }}
           ></div>
 
-          {/* Info */}
+
           <div className="flex-grow-1 text-center text-md-start mb-3 mb-md-0">
             <h3 className="h5 fw-bold text-dark mb-2">{name}</h3>
             <div className="d-flex justify-content-center justify-content-md-start align-items-center text-muted">
@@ -166,7 +166,7 @@ export function LocationCard({
             </div>
           </div>
 
-          {/* Button */}
+
           <button
             className="btn btn-link text-dark fw-bold p-0"
             onClick={onViewDetails}
@@ -264,7 +264,7 @@ export const GuestForm: React.FC<{
   <div className="card mb-3" style={{ borderRadius: "12px" }}>
     <div className="card-body p-4">
       <div className="d-flex  justify-content-between align-items-center mb-3">
-        {/* <h6 className="fw-bold text-dark mb-0">Guest {index + 1}</h6> */}
+
         <FormField
           label={`Guest ${index + 1}`}
           className="fw-bold text-dark mb-0 me-auto"

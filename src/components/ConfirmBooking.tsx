@@ -42,13 +42,10 @@ function BookingProfilePage({
           </nav>
         </div>
 
-        {/* Main Content */}
         <div className="container py-5 bg-light ">
           <div className="row justify-content-center">
             <div className="col-12 col-lg-8">
-              {/* Main Booking Card */}
               <div className="card shadow-lg border-0 rounded-4 overflow-hidden mb-4">
-                {/* Header Section */}
                 <div className="bg-secondary text-white p-4">
                   <div className="row align-items-center">
                     <div className="col-12 col-md-8">
@@ -74,10 +71,8 @@ function BookingProfilePage({
                   </div>
                 </div>
 
-                {/* Booking Details */}
                 <div className="card-body p-4">
                   <div className="row g-4">
-                    {/* Guest Information */}
                     <div className="col-12 col-md-6">
                       <div className="d-flex align-items-center mb-3">
                         <div className="bg-primary bg-opacity-10 rounded-circle p-3 me-3">
@@ -89,7 +84,7 @@ function BookingProfilePage({
                         </div>
                       </div>
                     </div>
-                    {/* Party Size */}
+
                     {bookingData?.guests && (
                       <div className="col-12 col-md-6">
                         <div className="d-flex align-items-center mb-3">
@@ -107,7 +102,7 @@ function BookingProfilePage({
                         </div>
                       </div>
                     )}
-                    {/* Date */}
+
                     <div
                       className={`col-12 ${
                         bookingData?.guests ? "col-md-6" : ""
@@ -125,7 +120,6 @@ function BookingProfilePage({
                         </div>
                       </div>
                     </div>
-                    {/* Time */}
                     <div className="col-12 col-md-6">
                       <div className="d-flex align-items-center mb-3">
                         <div className="bg-info bg-opacity-10 rounded-circle p-3 me-3">
@@ -139,7 +133,6 @@ function BookingProfilePage({
                         </div>
                       </div>
                     </div>
-                    {/* Payment Method */}
                     <div className="col-12 col-md-6">
                       <div className="d-flex align-items-center  mb-3">
                         <div className="bg-secondary bg-opacity-10 rounded-circle p-3 me-3">
@@ -173,7 +166,7 @@ function BookingProfilePage({
                   </div>
                 </div>
 
-                {/* Footer Actions */}
+
 
                 <div className="card-footer bg-light border-0 p-4">
                   <div className="d-flex gap-2 justify-content-center flex-wrap">
@@ -204,7 +197,7 @@ function BookingProfilePage({
                 </div>
               </div>
 
-              {/* Status Card */}
+
               <div className="card border-0 shadow-sm rounded-3">
                 <div className="card-body text-center py-4">
                   <p className="text-muted mt-3 mb-0">

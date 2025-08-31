@@ -16,7 +16,6 @@ export const useErrorHandler = () => {
         fallbackMessage = "An unexpected error occurred",
       } = options;
 
-      // Extract error message
       let errorMessage = fallbackMessage;
 
       if (error instanceof Error) {
@@ -27,12 +26,10 @@ export const useErrorHandler = () => {
         errorMessage = String(error.message);
       }
 
-      // Log error
       if (logError) {
         console.error("Error occurred:", error);
       }
 
-      // Show toast notification
       if (showToast) {
         toast.error(errorMessage);
       }

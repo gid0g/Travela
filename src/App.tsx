@@ -70,7 +70,7 @@ function App() {
           <Route path="/booking" element={<BookingPage />} />
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/error" element={<ErrorPage />} />
-          <Route path="*" element={<NotFoundPage />} /> {/* Fallback route */}
+          <Route path="*" element={<NotFoundPage />} /> 
         </Routes>
       </Router>
     </ErrorBoundary>

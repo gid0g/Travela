@@ -212,7 +212,6 @@ function Step2DateTimeGuests({
                 </p>
               </div>
 
-              {/* Date Selection */}
               <SectionTitle
                 title="Select Date"
                 subtitle="Choose an available date for your visit"
@@ -229,7 +228,6 @@ function Step2DateTimeGuests({
                 )}
               </div>
 
-              {/* Time Selection */}
               {formData?.date && (
                 <>
                   <SectionTitle
@@ -254,7 +252,6 @@ function Step2DateTimeGuests({
                 </>
               )}
 
-              {/* Guest Details */}
               {formData?.timeSlot && (
                 <>
                   <SectionTitle
@@ -287,7 +284,6 @@ function Step2DateTimeGuests({
                     Add Another Guest
                   </button>
 
-                  {/* Special Requests */}
                   <SectionTitle
                     title="Special Requests"
                     subtitle="Any special needs or requests (optional)"
@@ -373,10 +369,8 @@ function Step3ReviewPayment({
                 </p>
               </div>
 
-              {/* Booking Summary */}
               <BookingSummary formData={formData} />
 
-              {/* Payment Method Selection */}
               <SectionTitle
                 title="Payment Method"
                 subtitle="Choose how you'd like to pay"
@@ -390,7 +384,6 @@ function Step3ReviewPayment({
                 />
               ))}
 
-              {/* Card Details Form */}
               {paymentMethod === "Credit/Debit Card" && (
                 <>
                   <SectionTitle title="Card Details" />
@@ -445,7 +438,6 @@ function Step3ReviewPayment({
                 </>
               )}
 
-              {/* Billing Name */}
               {paymentMethod && (
                 <>
                   <SectionTitle title="Billing Information" />
@@ -462,7 +454,6 @@ function Step3ReviewPayment({
                 </>
               )}
 
-              {/* Terms and Conditions */}
               <div
                 className="card mb-4"
                 style={{ borderRadius: "12px", backgroundColor: "#f8f9fa" }}

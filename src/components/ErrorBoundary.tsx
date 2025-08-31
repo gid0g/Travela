@@ -24,9 +24,7 @@ class ErrorBoundary extends Component<Props, State> {
   componentDidCatch(error: Error, errorInfo: ErrorInfo) {
     console.error("ErrorBoundary caught an error:", error, errorInfo);
 
-    // Log error to external service in production
     if (import.meta.env.MODE === "production") {
-      // You can integrate with services like Sentry, LogRocket, etc.
       console.error("Error details:", {
         error: error.message,
         stack: error.stack,

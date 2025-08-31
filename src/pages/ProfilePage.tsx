@@ -57,7 +57,7 @@ function ProfilePage() {
                   </div>
                 </div>
 
-                {/* Profile Info */}
+
                 <div className="card-body pt-5 pb-4 text-center">
                   <h2 className="card-title fw-bold mb-1 text-dark">
                     {user?.full_name}
@@ -69,7 +69,7 @@ function ProfilePage() {
                   </p>
                 </div>
 
-                {/* Stats Section */}
+
                 <div className="card-footer bg-white border-0 py-4">
                   <div className="row text-center g-0">
                     <div className="col-6">

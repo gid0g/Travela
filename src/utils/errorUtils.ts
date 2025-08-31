@@ -81,10 +81,8 @@ export const handleComponentError = (error: unknown, componentName: string) => {
   console.error(`Error in ${componentName}:`, error);
 
   if (import.meta.env.MODE === "development") {
-    // In development, show more detailed errors
     toast.error(`Error in ${componentName}: ${extractErrorMessage(error)}`);
   } else {
-    // In production, show generic error
     toast.error("Something went wrong. Please try again.");
   }
 };

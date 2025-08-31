@@ -20,7 +20,6 @@ export const useAllAttractions = () =>
       return lastPage.page + 1;
     },
     retry: (failureCount, error) => {
-      // Don't retry on 404 errors
       if (
         error instanceof Error &&
         error.message.includes("No attractions found")
@@ -37,7 +36,6 @@ export const useGetAttraction = (title: string) => {
     queryFn: () => getAttractionByTitle(title),
     enabled: !!title,
     retry: (failureCount, error) => {
-      // Don't retry on 404 errors
       if (error instanceof Error && error.message.includes("not found")) {
         return false;
       }
@@ -51,7 +49,6 @@ export const useGetAttractionByPartialText = (title: string) => {
     queryFn: () => getAttractionByPartialText(title),
     enabled: !!title,
     retry: (failureCount, error) => {
-      // Don't retry on 404 errors
       if (
         error instanceof Error &&
         error.message.includes("No attractions found")

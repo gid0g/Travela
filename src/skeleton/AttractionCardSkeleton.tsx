@@ -15,18 +15,18 @@ export const CardSkeleton = () => {
       <div className="card-body p-4">
         <div className="d-flex justify-content-between align-items-start">
           <div className="flex-grow-1">
-            {/* Title skeleton */}
+
             <h5 className="card-title mb-2 fw-bold">
               <Skeleton width="70%" height={24} />
             </h5>
 
-            {/* Subtitle skeleton */}
+
             <p className="card-text small mb-0">
               <Skeleton width="50%" height={18} />
             </p>
           </div>
 
-          {/* Button skeleton */}
+
           <div style={{ width: 80, height: 36 }}>
             <Skeleton height="100%" borderRadius={8} />
           </div>
