@@ -3,17 +3,19 @@ import { useNavigate } from "react-router-dom";
 
 type LoginPromptModalProps = {
   show: boolean;
-  onClose?: () => void; 
+  onClose?: () => void;
 };
 
 export function LoginPromptModal({ show, onClose }: LoginPromptModalProps) {
   const navigate = useNavigate();
 
-  const handleClose = () => {
+  const handleNavigate = () => {
     if (onClose) onClose();
     navigate("/auth");
   };
-
+  const handleClose = () => {
+    if (onClose) onClose();
+  };
   return (
     <Modal show={show} onHide={handleClose} centered className="rounded-4">
       <Modal.Header closeButton>
@@ -23,8 +25,8 @@ export function LoginPromptModal({ show, onClose }: LoginPromptModalProps) {
         You must be logged in to perform this action. Please login to continue.
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="secondary" onClick={handleClose}>
-           Login
+        <Button variant="secondary" onClick={handleNavigate}>
+          Login
         </Button>
       </Modal.Footer>
     </Modal>

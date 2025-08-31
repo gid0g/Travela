@@ -63,6 +63,7 @@ export function AttractionCard({ attraction }: AttractionCardProps) {
   const [inView, setInView] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const cardRef = useRef<HTMLDivElement | null>(null);
+  const [showLoginModal, setShowLoginModal] = useState(false);
   const navigate = useNavigate();
   const setAttraction = useAttractionStore((state) => state?.setAttraction);
   const user = useUserStore((state) => state?.user);
@@ -102,77 +103,82 @@ export function AttractionCard({ attraction }: AttractionCardProps) {
   }, [imageUrl]);
   const handleBooking = () => {
     if (isNoUser) {
-      alert("Kindly Login First");
-      navigate("/");
+      setShowLoginModal(true);
     } else {
       navigate("/booking");
       setAttraction(attraction);
     }
   };
   return (
-    <motion.div
-      ref={cardRef}
-      className="card border-0 mb-3 mx-3"
-      style={{
-        backgroundImage: loaded
-          ? `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${imageUrl})`
-          : "black",
-        backgroundSize: "cover",
-        minHeight: "10rem",
-        color: "white",
-        borderRadius: "2rem",
-        cursor: "pointer",
-      }}
-      whileHover={{ scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
-      animate={{
-        opacity: loaded ? 1 : [0.4, 0.6, 0.8, 1],
-      }}
-      transition={{
-        duration: 1.5,
-        repeat: loaded ? 0 : Infinity,
-        ease: "easeInOut",
-      }}
-    >
-      <div className="card-body p-4">
-        <div className="d-flex justify-content-between align-items-start">
-          <div
-            className="flex-grow-1"
-            onClick={() => {
-              navigate("/results");
-              setAttraction(attraction);
-            }}
-          >
-            <h5
-              className={`card-title mb-2  ${
-                loaded ? "text-white" : "text-dark"
-              }  fw-bold`}
-              style={{ fontSize: "clamp(1.2rem, 2vw, 1.5rem)" }}
+    <>
+      <LoginPromptModal
+        show={showLoginModal}
+        onClose={() => setShowLoginModal(false)}
+      />
+      <motion.div
+        ref={cardRef}
+        className="card border-0 mb-3 mx-3"
+        style={{
+          backgroundImage: loaded
+            ? `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${imageUrl})`
+            : "black",
+          backgroundSize: "cover",
+          minHeight: "10rem",
+          color: "white",
+          borderRadius: "2rem",
+          cursor: "pointer",
+        }}
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
+        animate={{
+          opacity: loaded ? 1 : [0.4, 0.6, 0.8, 1],
+        }}
+        transition={{
+          duration: 1.5,
+          repeat: loaded ? 0 : Infinity,
+          ease: "easeInOut",
+        }}
+      >
+        <div className="card-body p-4">
+          <div className="d-flex justify-content-between align-items-start">
+            <div
+              className="flex-grow-1"
+              onClick={() => {
+                navigate("/results");
+                setAttraction(attraction);
+              }}
             >
-              {cleanTitle(attraction?.title)}
-            </h5>
-            <p
-              className={`card-text small opacity-75 mb-0 ${
-                loaded ? "text-white" : "text-dark"
-              }`}
-              style={{ fontSize: "clamp(0.9rem, 0.9vw, 1rem)" }}
+              <h5
+                className={`card-title mb-2  ${
+                  loaded ? "text-white" : "text-dark"
+                }  fw-bold`}
+                style={{ fontSize: "clamp(1.2rem, 2vw, 1.5rem)" }}
+              >
+                {cleanTitle(attraction?.title)}
+              </h5>
+              <p
+                className={`card-text small opacity-75 mb-0 ${
+                  loaded ? "text-white" : "text-dark"
+                }`}
+                style={{ fontSize: "clamp(0.9rem, 0.9vw, 1rem)" }}
+              >
+                {attraction?.secondaryInfo}
+              </p>
+            </div>
+            <motion.button
+              className="btn btn-light btn-sm p-1 p-md-3 my-1 my-md-0 d-flex align-items-center rounded-3 fw-bold"
+              onClick={() => {
+                handleBooking();
+              }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
             >
-              {attraction?.secondaryInfo}
-            </p>
+              <span className="me-1">Book</span>
+              <ChevronRight size={14} />
+            </motion.button>
           </div>
-          <motion.button
-            className="btn btn-light btn-sm p-1 p-md-3 my-1 my-md-0 d-flex align-items-center rounded-3 fw-bold"
-            onClick={() => {
-              handleBooking();
-            }}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <span className="me-1">Book</span>
-            <ChevronRight size={14} />
-          </motion.button>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>{" "}
+    </>
   );
 }
