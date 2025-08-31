@@ -1,8 +1,9 @@
-import React from "react";
+import React,{useState} from "react";
 import type { LocationInfo, LuxuryService } from "../types/result.types";
 import { Car, History, Bike, Clock, Star } from "lucide-react";
 import { useNavigate } from "react-router";
 import { useUserStore } from "../store/user.store";
+import { LoginPromptModal } from "./modal/LoginModal";
 
 export function ActionButtons({
   disabled,
@@ -177,23 +178,31 @@ export const LuxuryServices: React.FC<{ services: LuxuryService[] }> = ({
 
 export function BookButton() {
   const navigate = useNavigate();
+  const [showLoginModal, setShowLoginModal] = useState(false);
+
   const user = useUserStore((state) => state?.user);
   const isNoUser = user == null;
   const handleOnClick = () => {
     if (isNoUser) {
-      alert("Kindly Login First");
-      navigate("/");
+      setShowLoginModal(true);
+
     } else {
       navigate("/booking");
     }
   };
   return (
-    <button
-      className="btn btn-dark w-100 py-3 fw-bold text-uppercase"
-      style={{ borderRadius: "25px", fontSize: "16px" }}
-      onClick={() => handleOnClick()}
-    >
-      Book
-    </button>
+    <>
+      <LoginPromptModal
+        show={showLoginModal}
+        onClose={() => setShowLoginModal(false)}
+      />
+      <button
+        className="btn btn-dark w-100 py-3 fw-bold text-uppercase"
+        style={{ borderRadius: "25px", fontSize: "16px" }}
+        onClick={() => handleOnClick()}
+      >
+        Book
+      </button>
+    </>
   );
 }

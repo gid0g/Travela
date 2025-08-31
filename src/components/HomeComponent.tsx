@@ -138,16 +138,15 @@ export function AttractionCard({ attraction }: AttractionCardProps) {
           repeat: loaded ? 0 : Infinity,
           ease: "easeInOut",
         }}
+        onClick={() => {
+          console.log("click");
+          navigate("/results");
+          setAttraction(attraction);
+        }}
       >
         <div className="card-body p-4">
           <div className="d-flex justify-content-between align-items-start">
-            <div
-              className="flex-grow-1"
-              onClick={() => {
-                navigate("/results");
-                setAttraction(attraction);
-              }}
-            >
+            <div className="flex-grow-1">
               <h5
                 className={`card-title mb-2  ${
                   loaded ? "text-white" : "text-dark"
