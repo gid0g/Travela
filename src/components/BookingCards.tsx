@@ -12,7 +12,6 @@ function BookingCard({ booking }: BookingCardsProps) {
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const navigate = useNavigate();
   const handleModify = () => {
-    console.log("Clicked modify");
     navigate("/booking", { state: { booking } });
   };
   const handleCancel = () => {

@@ -38,7 +38,7 @@ export interface confirmBookingData {
   handleCancel: (formData: BookingFormData) => void;
   handleConfirm: (formData: BookingFormData) => void;
   isLoading: boolean;
-  isModify:boolean
+  isModify: boolean;
 }
 export interface ProgressStepProps {
   current: number;
@@ -94,4 +94,29 @@ export interface BookingProcessProps {
   updateGuest: (id: string, field: keyof Guest, value: string) => void;
   addGuest: () => void;
   removeGuest: (guestId: string) => void;
+}
+export interface Favorites {
+  hotel: {
+    id?: string;
+    title: string;
+    cardPhotos: string[];
+    primaryInfo: string| null;
+    secondaryInfo: string;
+    bubbleRating: {
+      rating: number;
+      count: string;
+    };
+    travelTimes: {
+      duration: string;
+      walkTime: string;
+      driveTime: string;
+      alternateTime: string;
+    };
+  };
+  id?: string;
+}
+export interface FavoritesStore {
+  favorites: Favorites[] | null;
+  setFavorites: (favorites: Favorites[] | null) => void;
+  removeFavorites: () => void;
 }

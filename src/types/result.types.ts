@@ -38,8 +38,14 @@ export interface TravelTimes {
   alternateTime: string;
 }
 
+export type ImageCarouselProps = {
+  images: string[];
+  interval?: number;
+};
+
+
 export type ExtractedHotel = {
-  id: string;
+  id?: string;
   title: string;
   cardPhotos: string[];
   primaryInfo: string | null;
@@ -48,11 +54,6 @@ export type ExtractedHotel = {
   bubbleRating_rating: number;
   bubbleRating_count: number;
   travelTimes: TravelTimes;
-};
-
-export type ImageCarouselProps = {
-  images: string[];
-  interval?: number;
 };
 
 export interface AttractionStore {

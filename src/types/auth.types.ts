@@ -51,6 +51,8 @@ export interface UserResponse {
   email: string;
   profile_image_url?: string;
   fallback_image?: string;
+  booking_count: number;
+  favorite_count: number;
 }
 
 export interface UserStore {

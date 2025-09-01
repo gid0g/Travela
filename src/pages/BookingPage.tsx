@@ -56,7 +56,6 @@ const BookingProcess = () => {
   const [isConfirm, setIsConfirm] = useState(false);
   const handleBack = () => {
     try {
-      console.log("Back clicked");
       setCurrentStep((prev) => Math.max(prev - 1, 1));
     } catch (error) {
       handleComponentError(error, "BookingPage.handleBack");

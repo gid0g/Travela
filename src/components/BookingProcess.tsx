@@ -42,7 +42,6 @@ function Step1Booking({
   const attraction = useAttractionStore((state) => state?.attraction);
   const handleViewDetails = () => {
     navigate("/results");
-    console.log("View details clicked");
   };
   const today = new Date().toISOString().split("T")[0];
   const canContinue =

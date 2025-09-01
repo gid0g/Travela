@@ -10,7 +10,7 @@ export const useAttractionStore = create<AttractionStore>()(
     }),
     {
       name: "attraction-store",
-      storage: createJSONStorage(() => localStorage),
+      storage: createJSONStorage(() => sessionStorage),
       partialize: (state) => ({ attraction: state.attraction }),
     }
   )

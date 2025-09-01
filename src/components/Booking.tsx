@@ -1,10 +1,13 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import type { LocationInfo, LuxuryService } from "../types/result.types";
-import { Car, History, Bike, Clock, Star } from "lucide-react";
+import { Car, History, Bike, Clock, Star, Heart } from "lucide-react";
 import { useNavigate } from "react-router";
 import { useUserStore } from "../store/user.store";
 import { LoginPromptModal } from "./modal/LoginModal";
-
+import { useAddFavorite , useRemoveFavorite} from "../hooks/useFavorites";
+import type { Favorites } from "../types/booking.types";
+import { mapToFavorite, checkIfFavorite } from "../utils/helper";
+import { useAttractionStore } from "../store/attraction.store";
 export function ActionButtons({
   disabled,
   onBack,
@@ -179,30 +182,60 @@ export const LuxuryServices: React.FC<{ services: LuxuryService[] }> = ({
 export function BookButton() {
   const navigate = useNavigate();
   const [showLoginModal, setShowLoginModal] = useState(false);
+  const { mutate: addFavorite } = useAddFavorite();
+  const { mutate: removeFavorite } = useRemoveFavorite();
 
+  const attraction = useAttractionStore((state) => state?.attraction);
+  const favorite: Favorites = mapToFavorite(attraction!);
   const user = useUserStore((state) => state?.user);
   const isNoUser = user == null;
+  const favoriteId = checkIfFavorite();
+  const isFavorite = !!favoriteId;
+
   const handleOnClick = () => {
     if (isNoUser) {
       setShowLoginModal(true);
-
     } else {
       navigate("/booking");
     }
   };
+
+  const handleOnFavorite = () => {
+    if (!isFavorite) {
+      addFavorite(favorite);
+    } else {
+      removeFavorite(favoriteId!);
+    }
+  };
+
   return (
     <>
       <LoginPromptModal
         show={showLoginModal}
         onClose={() => setShowLoginModal(false)}
       />
-      <button
-        className="btn btn-dark w-100 py-3 fw-bold text-uppercase"
-        style={{ borderRadius: "25px", fontSize: "16px" }}
-        onClick={() => handleOnClick()}
-      >
-        Book
-      </button>
+
+      <div className="d-flex w-100 gap-2">
+        <button
+          className="btn btn-dark fw-bold text-uppercase flex-grow-1"
+          style={{ borderRadius: "25px", fontSize: "16px", flexBasis: "75%" }}
+          onClick={handleOnClick}
+        >
+          Book
+        </button>
+
+        <button
+          className="btn border-0 d-flex align-items-center justify-content-center"
+          style={{ borderRadius: "25px", flexBasis: "25%" }}
+          onClick={handleOnFavorite}
+        >
+          <Heart
+            size={20}
+            color={isFavorite ? "red" : "gray"}
+            fill={isFavorite ? "red" : "none"}
+          />
+        </button>
+      </div>
     </>
   );
 }

@@ -11,7 +11,6 @@ const Onboarding = () => {
   const handleOnboardingComplete = () => {
     setShowOnboarding(false);
     localStorage.setItem("finishedOnboarding", "true");
-    console.log("Onboarding completed!");
   };
 
   return (

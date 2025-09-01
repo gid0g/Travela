@@ -66,7 +66,6 @@ function SearchPage() {
 
   const handleResultClick = (result: SearchResult) => {
     try {
-      console.log("result", result?.name);
       setSearchTerm(result?.name);
     } catch (error) {
       handleComponentError(error, "SearchPage.handleResultClick");

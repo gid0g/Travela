@@ -17,7 +17,6 @@ const getUser = async (): Promise<UserResponse> => {
   } catch (error: any) {
     console.error("Error fetching user:", error);
 
-    // Handle specific error cases
     if (error.response?.status === 401) {
       throw new Error("Authentication required. Please log in again");
     } else if (error.response?.status === 403) {

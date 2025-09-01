@@ -139,7 +139,6 @@ export function AttractionCard({ attraction }: AttractionCardProps) {
           ease: "easeInOut",
         }}
         onClick={() => {
-          console.log("click");
           navigate("/results");
           setAttraction(attraction);
         }}

@@ -5,8 +5,7 @@ import { useMutation, useQuery } from "@tanstack/react-query";
 export const useAddSearch = () => {
   return useMutation({
     mutationFn: addSearch,
-    onSuccess: async (data) => {
-      console.log("success", data);
+    onSuccess: async () => {
     },
     onError: async (error) => {
       console.error("error", error);

@@ -1,22 +1,28 @@
+import { useState } from "react";
 import { useUserStore } from "../store/user.store";
 import { Header } from "../components/HomeComponent";
 import { useGetBooking } from "../hooks/useBooking";
 import BookingCard from "../components/BookingCards";
+import { FavoriteCard } from "../components/FavoriteCard";
 import BookingCardSkeleton from "../skeleton/BookingCardSkeleton";
 import { useNavigate } from "react-router";
 import { useCookies } from "react-cookie";
+import { useFavoritesStore } from "../store/favorites.store";
 function ProfilePage() {
   const user = useUserStore((state) => state?.user);
   const removeUser = useUserStore((state) => state?.removeUser);
+  const favorites = useFavoritesStore((state) => state?.favorites);
   const { data, isLoading } = useGetBooking();
   const navigate = useNavigate();
   const [, , removeCookie] = useCookies(["access_token"]);
-
   const handleLogout = () => {
-    removeUser();
     removeCookie("access_token", { path: "/" });
     navigate("/");
+    removeUser();
   };
+  const [selected, setSelected] = useState<"bookings" | "favorites">(
+    "bookings"
+  );
 
   return (
     <>
@@ -57,7 +63,6 @@ function ProfilePage() {
                   </div>
                 </div>
 
-
                 <div className="card-body pt-5 pb-4 text-center">
                   <h2 className="card-title fw-bold mb-1 text-dark">
                     {user?.full_name}
@@ -69,19 +74,20 @@ function ProfilePage() {
                   </p>
                 </div>
 
-
                 <div className="card-footer bg-white border-0 py-4">
                   <div className="row text-center g-0">
                     <div className="col-6">
-                      <h5 className="fw-bold text-primary mb-1">{user?.id}</h5>
-                      <small className="text-muted">ID</small>
+                      <h5 className="fw-bold text-primary mb-1">
+                        {data?.length}
+                      </h5>
+                      <small className="text-muted">Bookings</small>{" "}
                     </div>
                     <div className="col-6">
                       <div className="border-end">
                         <h5 className="fw-bold text-primary mb-1">
-                          {data?.length}
+                          {favorites?.length}
                         </h5>
-                        <small className="text-muted">Bookings</small>
+                        <small className="text-muted">Favorites</small>
                       </div>
                     </div>
                   </div>
@@ -95,34 +101,90 @@ function ProfilePage() {
                   </button>
                 </div>
               </div>
-
-              <div className="mt-4 row">
-                {data?.map((booking, idx) => (
-                  <BookingCard key={idx} booking={booking} />
-                ))}
-                {isLoading && (
-                  <>
-                    {[...Array(5)].map((_, index) => (
-                      <BookingCardSkeleton key={index} />
-                    ))}
-                  </>
-                )}
-                {data?.length == 0 && (
-                  <div className="d-flex my-5 flex-column justify-content-center align-items-center">
-                    <h3>No bookings yet 😔</h3>
-                    <span className="my-2">
-                      Start exploring and book your first trip from our home
-                      page.
-                    </span>
-                    <button
-                      className="btn btn-lg btn-outline-secondary mt-4"
-                      onClick={() => navigate("/home")}
-                    >
-                      Go Home
-                    </button>
-                  </div>
-                )}
+              <div className="d-flex justify-content-center my-4">
+                <div
+                  className="btn-group btn-group-lg"
+                  role="group"
+                  aria-label="Toggle Bookings and Favorites"
+                >
+                  <button
+                    type="button"
+                    className={`btn fw-bold ${
+                      selected === "bookings"
+                        ? "btn-secondary"
+                        : "btn-outline-secondary"
+                    }`}
+                    onClick={() => setSelected("bookings")}
+                    style={{ minWidth: "150px" }}
+                  >
+                    Bookings
+                  </button>
+                  <button
+                    type="button"
+                    className={`btn fw-bold ${
+                      selected === "favorites"
+                        ? "btn-secondary"
+                        : "btn-outline-secondary"
+                    }`}
+                    onClick={() => setSelected("favorites")}
+                    style={{ minWidth: "150px" }}
+                  >
+                    Favorites
+                  </button>
+                </div>
               </div>
+              {selected == "bookings" ? (
+                <div className="mt-4 row">
+                  {data?.map((booking, idx) => (
+                    <BookingCard key={idx} booking={booking} />
+                  ))}
+                  {isLoading && (
+                    <>
+                      {[...Array(5)].map((_, index) => (
+                        <BookingCardSkeleton key={index} />
+                      ))}
+                    </>
+                  )}
+
+                  {data?.length == 0 && (
+                    <div className="d-flex my-5 flex-column justify-content-center align-items-center">
+                      <h3>No bookings yet 😔</h3>
+                      <span className="my-2">
+                        Start exploring and book your first trip from our home
+                        page.
+                      </span>
+                      <button
+                        className="btn btn-lg btn-outline-secondary mt-4"
+                        onClick={() => navigate("/home")}
+                      >
+                        Go Home
+                      </button>
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <div className="mt-4 row">
+                  {favorites?.map((favorite, idx) => (
+                    <FavoriteCard key={idx} favorite={favorite} />
+                  ))}
+
+                  {favorites?.length == 0 && (
+                    <div className="d-flex my-5 flex-column justify-content-center align-items-center">
+                      <h3>You don't have Favorites yet 😔</h3>
+                      <span className="my-2">
+                        Start exploring and see what you like from our home
+                        page.
+                      </span>
+                      <button
+                        className="btn btn-lg btn-outline-secondary mt-4"
+                        onClick={() => navigate("/home")}
+                      >
+                        Go Home
+                      </button>
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
           </div>
         </div>

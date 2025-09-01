@@ -72,7 +72,7 @@ function AuthForm({
             errors[issue.path[0] as string] = issue.message;
           }
         });
-        console.log("Validation errors:", errors);
+        console.error("Validation errors:", errors);
         setFieldErrors(errors);
       }
     }
@@ -222,10 +222,8 @@ function AuthApp({ onNext, isLoading }: AuthAppProps) {
       username: data.username.trim(),
       password: data.password,
     };
-    console.log("payload", payload);
     try {
       await new Promise((resolve) => setTimeout(resolve, 1000));
-      console.log("Login data:", payload);
       onNext(payload, true);
     } catch (err) {
       setError("Invalid credentials. Please try again.");
@@ -240,7 +238,6 @@ function AuthApp({ onNext, isLoading }: AuthAppProps) {
 
     try {
       await new Promise((resolve) => setTimeout(resolve, 1500));
-      console.log("Signup data:", data);
       onNext(data, false);
     } catch (err) {
       setError("Failed to create account. Please try again.");
@@ -251,7 +248,6 @@ function AuthApp({ onNext, isLoading }: AuthAppProps) {
 
   const handleForgotPassword = () => {
     alert("Forgot password functionality would be implemented here");
-    console.log("Forgot password clicked");
   };
 
   return (

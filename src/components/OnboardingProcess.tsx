@@ -33,11 +33,9 @@ export default function OnboardingProcess({
     navigate("/home");
   };
   const handleAuth = (data: any, isLogin: boolean) => {
-    console.log("clicked login", data, isLogin);
     if (isLogin) {
       login(data);
     } else {
-      console.log("data", data);
       signup(data);
     }
   };

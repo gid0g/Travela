@@ -4,8 +4,11 @@ import type {
   ExtractedHotel,
   HotelResponse,
 } from "../types/result.types";
-import type { TimeSlot } from "../types/booking.types";
+import type { TimeSlot, Favorites } from "../types/booking.types";
 import type { SearchResult } from "../types/search.types";
+import { useAttractionStore } from "../store/attraction.store";
+import { useFavoritesStore } from "../store/favorites.store";
+
 export const formatCardNumber = (value: string) => {
   return value
     .replace(/\D/g, "")
@@ -77,7 +80,7 @@ export const validateEmail = (email: string) => {
 };
 
 export const cleanTitle = (text: string): string => {
-  if (!text || typeof text !== 'string') return "Unknown Title";
+  if (!text || typeof text !== "string") return "Unknown Title";
   return text.replace(/^\d+\.\s*/, "");
 };
 
@@ -106,7 +109,7 @@ export function mapToLocationInfo(raw: ExtractedHotel): LocationInfo {
 }
 export function mapToRecentSearches(hotels: ExtractedHotel[]): SearchResult[] {
   if (!hotels || !Array.isArray(hotels)) return [];
-  
+
   const recent = hotels.slice(0, 5).map((hotel) => ({
     id: hotel?.id || "unknown",
     name: hotel?.title?.replace(/^\d+\.\s*/, "") || "Unknown Title",
@@ -116,26 +119,26 @@ export function mapToRecentSearches(hotels: ExtractedHotel[]): SearchResult[] {
 }
 export function mapToSearch(hotels: HotelResponse): SearchResult[] {
   if (!hotels || !Array.isArray(hotels)) return [];
-  
+
   const recent =
-    hotels.flatMap((page) =>
-      page?.items?.map((hotel, index) => ({
-        id: `${page?.page || 0}-${index}`,
-        name: hotel?.title || "Unknown Title",
-        location: hotel?.secondaryInfo || "Unknown Location",
-      })) || []
+    hotels.flatMap(
+      (page) =>
+        page?.items?.map((hotel, index) => ({
+          id: `${page?.page || 0}-${index}`,
+          name: hotel?.title || "Unknown Title",
+          location: hotel?.secondaryInfo || "Unknown Location",
+        })) || []
     ) ?? [];
 
   return recent;
 }
 
 export function cleanImageUrl(url: string): string {
-  if (!url || typeof url !== 'string') return "";
-  
+  if (!url || typeof url !== "string") return "";
+
   const match = url.match(/^(.*?\.(jpg|jpeg|png|webp))/i);
   return match ? match[1] : url;
 }
-
 
 export function generateTimeSlots(requiredTime?: string): TimeSlot[] {
   const randomInt = (min: number, max: number) =>
@@ -160,7 +163,7 @@ export function generateTimeSlots(requiredTime?: string): TimeSlot[] {
   selectedTimes = selectedTimes.slice(0, 4);
 
   if (requiredTime && !selectedTimes.includes(requiredTime)) {
-    selectedTimes[0] = requiredTime; 
+    selectedTimes[0] = requiredTime;
   }
 
   const ordered = selectedTimes.sort(
@@ -176,3 +179,45 @@ export function generateTimeSlots(requiredTime?: string): TimeSlot[] {
 
   return timeSlots;
 }
+
+export const mapToFavorite = (raw: ExtractedHotel): Favorites => {
+  return {
+    hotel: {
+      id: "0",
+      title: raw?.title?.replace(/^\d+\.\s*/, ""),
+      cardPhotos: raw?.cardPhotos,
+      primaryInfo: raw?.primaryInfo,
+      secondaryInfo: raw?.secondaryInfo,
+      bubbleRating: {
+        rating: raw?.bubbleRating_rating,
+        count: raw?.bubbleRating_count.toString(),
+      },
+      travelTimes: raw?.travelTimes,
+    },
+  };
+};
+
+export const mapToHotel = (raw:Favorites): ExtractedHotel=>{
+  return {
+    id: raw?.hotel?.id,
+    title: raw?.hotel?.title,
+    cardPhotos: raw?.hotel?.cardPhotos,
+    primaryInfo: raw?.hotel?.primaryInfo, 
+    secondaryInfo: raw?.hotel?.secondaryInfo,
+    bubbleRating_count: Number(raw?.hotel?.bubbleRating?.count),
+    bubbleRating_rating: Number(raw?.hotel?.bubbleRating?.rating),
+    travelTimes: raw?.hotel?.travelTimes
+  }
+}
+export const checkIfFavorite = (): number | null => {
+  const attraction = useAttractionStore((state) => state?.attraction);
+  const favorites = useFavoritesStore((state) => state?.favorites);
+
+  if (!favorites || !attraction) return null;
+
+  const match = favorites.find(
+    (fav) => fav.hotel.title.toLowerCase() === attraction.title.toLowerCase()
+  );
+
+  return Number(match?.id) ?? null;
+};

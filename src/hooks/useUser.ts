@@ -6,13 +6,14 @@ import { getUser } from "../queries/user.queries";
 import { toast } from "react-toastify";
 import { useUserStore } from "../store/user.store";
 import type { AxiosError } from "axios";
-
+import { getFavorites } from "../queries/favorites.queries";
+import { useFavoritesStore } from "../store/favorites.store";
 export const useLoginUser = () => {
   const [, setCookie] = useCookies();
   const navigate = useNavigate();
   const queryClient = useQueryClient();
   const setUser = useUserStore((state) => state.setUser);
-
+  const setFavorites = useFavoritesStore((state)=>state?.setFavorites)
   return useMutation({
     mutationFn: loginUser,
     onSuccess: async (data) => {
@@ -26,10 +27,15 @@ export const useLoginUser = () => {
           queryKey: ["user"],
           queryFn: getUser,
         });
+        setUser(user);
+
+        const favorites = await queryClient.fetchQuery({
+          queryKey: ["favorites"],
+          queryFn: getFavorites,
+        });
+        setFavorites(favorites);
         toast.success("Login successful");
 
-        setUser(user);
-        console.log("user", user);
       } catch (error: any) {
         console.error("Error fetching user after login:", error);
         toast.error(

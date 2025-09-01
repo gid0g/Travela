@@ -11,7 +11,7 @@ export const useUserStore = create<UserStore>()(
     }),
     {
       name: "user-store",
-      storage: createJSONStorage(() => localStorage),
+      storage: createJSONStorage(() => sessionStorage),
       partialize: (state) => ({ user: state.user }),
     }
   )

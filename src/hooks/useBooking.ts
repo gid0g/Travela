@@ -8,29 +8,31 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { toast } from "react-toastify";
 
 export const usePlaceBook = () => {
+  const queryClient = useQueryClient();
+
   return useMutation({
     mutationFn: placeBooking,
-    onSuccess: (data) => {
+    onSuccess: () => {
       toast.success("Booking Successfully Placed");
-      console.log("booking:", data);
+      queryClient.invalidateQueries({ queryKey: ["bookings"] });
     },
-    onError: (error) => {
+    onError: () => {
       toast.error("Failed");
-      console.log("error", error);
     },
   });
 };
 
 export const useModifyBooking = () => {
+  const queryClient = useQueryClient();
+
   return useMutation({
     mutationFn: modifyBooking,
-    onSuccess: (data) => {
+    onSuccess: () => {
       toast.success("Update Success");
-      console.log("Update:", data);
+      queryClient.invalidateQueries({ queryKey: ["bookings"] });
     },
-    onError: (error) => {
+    onError: () => {
       toast.error("Update Failed");
-      console.log("error", error);
     },
   });
 };
@@ -44,9 +46,8 @@ export const useCancelBooking = () => {
       queryClient.invalidateQueries({ queryKey: ["bookings"] });
       toast.success("Booking Cancelled");
     },
-    onError: (error) => {
+    onError: () => {
       toast.error("Failed to cancel booking");
-      console.log("error", error);
     },
   });
 };
